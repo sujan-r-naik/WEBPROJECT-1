@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url("./rrrrr.jpg");
+      background-size: cover;
+      border-style: solid;
+      /*padding:10px;*/
+    }
+
+    .header img {
+      float: left;
+      width: 200px;
+      height: 100px;
+      background: #555;
+    }
+
+    .header h1 {
+      position: relative;
+      top: 18px;
+      left: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    table.table-da,
+    th.table-heading,
+    td.tabledata {
+      font-weight: bold;
+      font-size: 13px;
+      border: 2px solid black;
+      padding: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 12px 14px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .lab-image {
+      height: 30vh;
+    }
+
+    .lab-image img {
+      float: left;
+      margin: 10px 20px 10px 10px;
+    }
+
+    .lab-image p {
+      padding-top: 1vh;
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1170px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .footer {
+      background-color: #24262b;
+      padding: 70px 10;
+    }
+
+    .footer-col {
+      width: 20%;
+      padding: 0 15px;
+    }
+
+    .footer-col h4 {
+      font-size: 12px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .footer-col h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 1px;
+      box-sizing: border-box;
+      width: 40px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 10px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px;
+    }
+
+    .footer-col .social-links a {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff;
+    }
+
+    /*responsive*/
+    @media(max-width: 767px) {
+      .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media(max-width: 574px) {
+      .footer-col {
+        width: 100%;
+      }
+    }
+
+    .site-footer {
+      margin-top: 30px;
+      background-color: #26272b;
+      padding: 45px 0 20px;
+      font-size: 15px;
+      line-height: 24px;
+      color: #737373;
+    }
+
+    .site-footer hr {
+      border-top-color: #bbb;
+      opacity: 0.5
+    }
+
+    .site-footer hr.small {
+      margin: 20px 0
+    }
+
+    .site-footer h6 {
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-top: 5px;
+      letter-spacing: 2px
+    }
+
+    .site-footer a {
+      color: #737373;
+    }
+
+    .site-footer a:hover {
+      color: #3366cc;
+      text-decoration: none;
+    }
+
+    .footer-links {
+      padding-left: 0;
+      list-style: none
+    }
+
+    .footer-links li {
+      display: block
+    }
+
+    .footer-links a {
+      color: #737373
+    }
+
+    .footer-links a:active,
+    .footer-links a:focus,
+    .footer-links a:hover {
+      color: #3366cc;
+      text-decoration: none;
+    }
+
+    .footer-links.inline li {
+      display: inline-block
+    }
+
+    .site-footer .social-icons {
+      text-align: right
+    }
+
+    .site-footer .social-icons a {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: 6px;
+      margin-right: 0;
+      border-radius: 100%;
+      background-color: #33353d
+    }
+
+    .copyright-text {
+      margin: 0
+    }
+
+    @media (max-width:991px) {
+      .site-footer [class^=col-] {
+        margin-bottom: 30px
+      }
+    }
+
+    @media (max-width:767px) {
+      .site-footer {
+        padding-bottom: 0
+      }
+
+      .site-footer .copyright-text,
+      .site-footer .social-icons {
+        text-align: center
+      }
+    }
+
+    .social-icons {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-bottom: 4px
+    }
+
+    .social-icons li.title {
+      margin-right: 15px;
+      text-transform: uppercase;
+      color: #96a2b2;
+      font-weight: 700;
+      font-size: 13px
+    }
+
+    .social-icons a {
+      background-color: #eceeef;
+      color: #818a91;
+      font-size: 16px;
+      display: inline-block;
+      line-height: 44px;
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      margin-right: 8px;
+      border-radius: 100%;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear
+    }
+
+    .social-icons a:active,
+    .social-icons a:focus,
+    .social-icons a:hover {
+      color: #fff;
+      background-color: #29aafe
+    }
+
+    .social-icons.size-sm a {
+      line-height: 34px;
+      height: 34px;
+      width: 34px;
+      font-size: 14px
+    }
+
+    .social-icons a.facebook:hover {
+      background-color: #3b5998
+    }
+
+    .social-icons a.twitter:hover {
+      background-color: #00aced
+    }
+
+    .social-icons a.linkedin:hover {
+      background-color: #007bb6
+    }
+
+    .social-icons a.dribbble:hover {
+      background-color: #ea4c89
+    }
+
+    @media (max-width:767px) {
+      .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+      }
+    }
+  </style>
+
+  <head>
+    <title>Information about your department.</title>
+    <div class="header">
+      <img src="rama-institute.jpg" alt="logo" />
+      <h2 align="center" style="font-family:'Courier New'">ST JOSEPH ENGINEERING COLLEGE MANGALURU</h2>
+
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/8f4777be85.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <h3 style="margin:30px 0 30px 5px"><u>Master of Computer Applications(MCA) Courses</u></h3>
+  <p style="margin:0 0 0 5px"><b>The Master of Computer Applications (MCA) programme was started in the year 2008 with
+      an intake of 60 students.
+      The Department offers a three years course approved by AICTE, Government of India and is affiliated to
+      Visvesvaraya Technological University (VTU), Belgaum, Karnataka.Computer Applications at St Joseph is composed of
+      core classes organized around the study of design and analysis techniques used to write software in various
+      application domains along with details about the internal workings of computers and networks. Elective classes in
+      areas such as Rich Internet Applications, mobile computing, Advanced computer networks, graphics, Unix System
+      programming, Artificial Intelligence and others allow students to explore areas of individual interest</b></p>
+  <h3 style="margin:25px 0 25px 5px"><u>Faculty</u></h3>
+  <table style="width:90%;margin:0 0 0 5px;padding-bottom:20px" class="table-da">
+    <tr>
+      <th class="table-heading" style="font-size:20px;">Name</th>
+      <th class="table-heading" style="font-size:20px;">Designation</th>
+      <th class="table-heading" style="font-size:20px;">Qualification</th>
+      <th class="table-heading" style="font-size:20px;">Email</th>
+    </tr>
+    <tr>
+      <td class="tabledata">Dr. Rio D'Souza</td>
+      <td class="tabledata">Professor & Dean</td>
+      <td class="tabledata">B.E, M.Tech, ADAB, Ph.D.</td>
+      <td class="tabledata">riod@sjec.ac.in</td>
+    </tr>
+    <tr>
+      <td class="tabledata"> Ms Sumangala</td>
+      <td class="tabledata">NAcademician with 20 years of teaching experience,Interested in the area of Artificial
+        Intelligence,Assistant Professor, HOD</td>
+      <td class="tabledata">B.Sc, M.Sc, PGDCA</td>
+      <td class="tabledata">sumangalan@sjec.ac.in</td>
+    </tr>
+    <tr>
+      <td class="tabledata"> Ms Sadhana Kumble</td>
+      <td class="tabledata">Academician with 10 years teaching experience specialization in computer applications with
+        keen...Assistant Professor</td>
+      <td class="tabledata">B.Sc, M.C.A</td>
+      <td class="tabledata"> sadhanak@sjec.ac.in</td>
+    </tr>
+    <tr>
+      <td class="tabledata">Mr Sathyendra Bhat J</td>
+      <td class="tabledata">An aspiring academician with 11 years of teaching experience and 1.5 years of industry
+        experience...Assistant Professor</td>
+      <td class="tabledata">B.C.A., M.C.A</td>
+      <td class="tabledata">sathyendrab@sjec.ac.in</td>
+    </tr>
+    <tr>
+      <td class="tabledata">Mr Hareesha B</td>
+      <td class="tabledata">Academician having 11 Years of Teaching experience with a specialization of computer
+        applications...Assistant Professor</td>
+      <td class="tabledata">DEC, BIT, MCA, (Ph.D)</td>
+      <td class="tabledata">sharsh2000@gmail.com</td>
+    </tr>
+    <tr>
+      <td class="tabledata">Mr Gururaja S</td>
+      <td class="tabledata">Academician with 9 years of total experience in teaching in education Institution.
+        Specialization in...Assistant Professor</td>
+      <td class="tabledata">B.Sc., M.C.A</td>
+      <td class="tabledata">gururajs@sjec.ac.in </td>
+    </tr>
+    <tr>
+      <td class="tabledata">Mr Ragesh Raju</td>
+      <td class="tabledata">An aspiring academician with 10 years of teaching experience having specialization in the
+        field of...Assistant Professor</td>
+      <td class="tabledata">B.Sc.,M.C.A</td>
+      <td class="tabledata"> rageshr@sjec.ac.in</td>
+    </tr>
+  </table>
+
+  <h4 style="margin:30px 0 30px 5px"><u>Technical & Supporting Staff</u></h4>
+  <table style="width:90%;margin:0 0 0 5px;padding-bottom:20px" class="table-da">
+    <tr>
+      <th class="table-heading" style="font-size:20px;">Name</th>
+      <th class="table-heading" style="font-size:20px;">Designation</th>
+      <th class="table-heading" style="font-size:20px;">Qualification</th>
+    </tr>
+    <tr>
+      <td class="tabledata">Ms Divya Sujith Kumar</td>
+      <td class="tabledata">Lab Instructor</td>
+      <td class="tabledata">Diploma CSE, BCA</td>
+
+    </tr>
+    <tr>
+      <td class="tabledata">Ms Divya P</td>
+      <td class="tabledata">Lab Instructor</td>
+      <td class="tabledata">Diploma CSE</td>
+
+    </tr>
+    <tr>
+      <td class="tabledata">Ms Asha Lavina Flores</td>
+      <td class="tabledata"> Attender</td>
+      <td class="tabledata">PUC</td>
+    </tr>
+  </table>
+  <h3 style="margin:30px 0 30px 5px"><u>Facility</u></h3>
+  <div class="lab-image">
+    <img src="./lab.jpg" alt="lab-image">
+    <h3 align="center"><u><b>Laboratories</b></u></h3>
+    <p><u><b>Four well established laboratories, to meet the computing needs of the students</b></u></p>
+    <pre style="font-size: 0.8rem;font-weight: bold;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+  *C-programming and Object Oriented Programming Laboratory
+  *Unix and System Software Laboratory
+  *C# and .Net Laboratory
+  *Web and Internet Computing Laboratory
+  </pre>
+  </div>
+
+  <div class="lab-image">
+    <img src="./libary.jpg" alt="library-image">
+    <h3 align="center"><u><b>Department Library</b></u></h3>
+    <p><b>An independent Library cum reading room provides students’ access to the latest Titles, journals, Conference
+      Papers, Question Papers and Placement supporting material. In addition, traditional and digital references are
+      available in the Central Library.</b></p>
+
+  </div>
+  <div class="lab-image">
+    <img src="intern.jpg" alt="intern-image">
+    <h3 align="center"><u><b>Internship</b></u></h3>
+    <p><b>The MCA programme includes a 6 month internship cum project study in different companies to enable students to
+      gain practical experience and make a transition into the industry. Our students have done a number of the
+      outstanding projects well appreciated by their managers and companies.</b></p>
+
+  </div>
+  <div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Get In Touch</h6>
+            <p style="font-family:verdana">St Joseph Engineering College<br>Vamanjoor, Mangaluru - 575028, Karnataka,
+              India<br>+91 824 2263753/54/55/56<br>sjec@sjec.ac.in</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>About Us</h6>
+            <ul class="footer-links">
+              <li><a href="https://www.sjec.ac.in/about-sjec-mangalore.php">About SJEC</a></li>
+              <li><a href="https://www.sjec.ac.in/sjec-vision-mission.php">Vision & Mission </a></li>
+              <li><a href="https://www.sjec.ac.in/sjec-college-commitees.php">College Commitees</a></li>
+              <li><a href="https://www.sjec.ac.in/sjec-anthem.php">college Anthem</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Admission Links</h6>
+            <ul class="footer-links">
+              <li><a href="https://www.sjec.ac.in/admission-bachelor-engineering.php">Bachelor of Engineering </a>
+              </li>
+              <li><a href="https://www.sjec.ac.in/admission-post-graduate.php">Master of Business Administration</a>
+              </li>
+              <li><a href="https://www.sjec.ac.in/admission-post-graduate-mca.php">Master of Computer Applications</a>
+              </li>
+              <li><a href="https://www.sjec.ac.in/admission-m-sc.php">M.Sc by Research</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+              <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
